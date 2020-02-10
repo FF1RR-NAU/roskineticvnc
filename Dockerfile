@@ -48,6 +48,7 @@ RUN pip install setuptools wheel && pip install -r /usr/lib/web/requirements.txt
 RUN apt-get update && apt-get install -q -y \
 		less \
 	    tmux \
+		xterm \
 	    zsh \
 	    curl \
 	    wget \
