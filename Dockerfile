@@ -19,8 +19,6 @@ RUN apt-get update \
         lxde x11vnc xvfb \
         gtk2-engines-murrine ttf-ubuntu-font-family \
         firefox \
-        fonts-wqy-microhei \
-        language-pack-zh-hant language-pack-gnome-zh-hant firefox-locale-zh-hant libreoffice-l10n-zh-tw \
         nginx \
         python-pip python-dev build-essential \
         mesa-utils libgl1-mesa-dri \
@@ -31,6 +29,8 @@ RUN apt-get update \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 # apt-get above: libreoffice vlc flvstreamer ffmpeg
+#         fonts-wqy-microhei \
+#         language-pack-zh-hant language-pack-gnome-zh-hant firefox-locale-zh-hant libreoffice-l10n-zh-tw \
 
 # Set up VLC under root
 # RUN cp /usr/bin/vlc /usr/bin/vlc_backup
